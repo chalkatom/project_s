@@ -35,7 +35,7 @@ void print_option(int x, int y, char *text, int selected) {
     if (selected) {
         printf("\x1b[1;32m> %s\x1b[0m\n", text); // highlighted green if selected
     } else {
-        printf("> %s\n", text);
+        printf("  %s\n", text);
     }
 }
 
@@ -102,7 +102,7 @@ int main() {
                 printf("\033[H\033[J");
                 printf("Starting game...\n");
                 Sleep(1000);
-                printf("\033[H\033[J");
+                printf("\033[H\033[J"); 
                 break;
             } else if (selected == 1) {
                 printf("\033[H\033[J");
